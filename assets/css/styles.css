@@ -1,1 +1,8 @@
-styles.css
+*{
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.container .pokeContainer h1 #pokedex{
+	color: #C62828;
+}
