@@ -3,28 +3,58 @@
   <head>
        <meta charset="utf-8">
     		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-       <title>Pokedex</title>
-       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> <!-- FONT -->
-       <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- BOOTSTRAP -->
-       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <title>Pokedex</title>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> <!-- FONT -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"><!-- Materialize css -->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- Materialize Icons -->
+       <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 	</head>
 	<body>
-		<div class="container">
+	<section class="pokedex">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-offset-1 col-lg-12 pokeContainer">
-					<h1 id="pokedex">Pokédex</h1>
+				<div class="col s12 pokeContainer">
+					<h1 class="center">Pokédex</h1>
 				</div>
-					<div> <!--  acá escribirá la foto y el nombre del poke -->
-					</div>
-			</div> <!-- row -->
+				<form class="col s12">
+        	<div class="row">
+          	<div class="input-field col s6">
+            	<i class="material-icons prefix">search</i>
+                <input placeholder="" type="text" class="validate">
+            </div> <!-- input field -->
+          </div> <!-- row -->
+        </form>
+			</div>
+
+			<!--  acá escribirá la foto y el nombre del poke -->
+			<div class="container">
+      	<div class="row pokemon">
+      		<!-- las columnas se crean desde el append de js -->   	
+
+        </div>
+        </div> <!-- container pokemon -->
+      </div> <!-- container fluid -->
+  	
+				<!-- Modal Trigger -->
+		  <a class="waves-effect waves-light btn" href="#modal1">Modal</a>
+
+		  <!-- Modal Structure -->
+		  <div id="modal1" class="modal">
+		    <div class="modal-content">
+		      <h4>Modal Header</h4>
+		      <p>A bunch of text</p>
+		    </div>
+		    <div class="modal-footer">
+		      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+		    </div>
+		  </div>
+  </section>
+
+		</div> <!-- row container -->
 		</div> <!-- container -->
 		<!--  jquery -->
- <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <!-- BOOTSTRAP --> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script> <!-- bootstrap -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<!-- Materialize Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="assets/js/main.js"></script>
 	</body>
-
